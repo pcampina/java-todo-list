@@ -7,3 +7,18 @@ Content-Type: application/json
     "username": "pcampina",
     "password": "123456"
 }
+
+###
+
+# @name tasks
+POST http://localhost:8080/tasks/
+Content-Type: application/json
+Authorization: Basic pcampina:123456
+
+{
+  "title": "Task placeholder 01",
+  "description": "This is an simple task",
+  "priority": "ALTA",
+  "startAt": "2023-10-12T18:00:00",
+  "endAt": "2023-10-12T18:30:00"
+}
